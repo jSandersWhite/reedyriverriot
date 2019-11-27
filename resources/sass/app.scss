@@ -1,1 +1,10 @@
 //
+@import '../../node_modules/mdbootstrap/css/mdb.css';
+@import './mdb-free.scss';
+@import './mdb-lite-free.scss';
+@import '../../node_modules/mdbootstrap/css/bootstrap.css';
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+.header-img {
+    max-width: 100px;
+}
