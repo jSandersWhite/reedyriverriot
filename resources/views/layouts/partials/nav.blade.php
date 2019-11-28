@@ -1,19 +1,16 @@
+
+<!--Main Navigation-->
 <header class="black">
-    <ul class="nav justify-content-end black px-4 .sticky-top">
-        <a href="http://mp.gg/umubn" class="text-uppercase btn btn-outline-green btn-sm">Join the Riot</a>
-    </ul>
-    <div class="justify-content-center black text-center">
-        <a class="mx-auto" href="{{ route('home') }}">
-            <img src="{{ asset('images/riot.png') }}" class="header-img">
-        </a>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark black text-white justify-content-center text-center">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="{{ route('home') }}">
+                    <img src="{{ asset('images/riot.png') }}" class="header-img d-none d-sm-block">
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="d-block collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
                 </li>
@@ -27,6 +24,14 @@
                     <a class="nav-link" href="#">Shop</a>
                 </li>
             </ul>
+            <a href="http://mp.gg/umubn" class="text-uppercase btn btn-outline-green btn-sm">Join the Riot</a><br>
+            <div class="d-flex justify-content-center-lg">
+                <a href="https://www.facebook.com/reedyriverriot"><i class="fab fa-facebook p-2"></i></a> 
+                <a href="https://instagram.com/reedyriverriot"><i class="fab fa-instagram p-2"></i></a> 
+                <a href="https://www.twitter.com/GVLRiot"><i class="fab fa-twitter p-2"></i></a> 
+            </div>
         </div>
+    </div>
     </nav>
 </header>
+    

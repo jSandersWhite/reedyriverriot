@@ -43697,6 +43697,23 @@ ul.stepper li.completed a .label {
 }
 
 .header-img {
-  max-width: 200px;
+  max-width: 100px;
+}
+
+.bg {
+  background-image: url(/images/riot-bg.jpg?e30369de39217ffa6092d9d45e45c9b4);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15vw;
+  background-color: black;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.landing-img {
+  max-width: 350px;
 }
 
