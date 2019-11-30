@@ -43704,3 +43704,21 @@ ul.stepper li.completed a .label {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.bg {
+  background-image: url(/images/riot-bg.jpg?e30369de39217ffa6092d9d45e45c9b4);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15vw;
+  background-color: black;
+}
+
+.landing-img {
+  max-width: 350px;
+}
+
+.home-video {
+  width: 100%;
+  height: 50vw;
+}
+

@@ -13,7 +13,7 @@ class CreatePagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('pages', function (Blueprint $table) {
+        Schema::create('page', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('title');

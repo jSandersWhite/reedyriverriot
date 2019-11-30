@@ -13,7 +13,7 @@ class CreateChantsTable extends Migration
      */
     public function up()
     {
-        Schema::create('chants', function (Blueprint $table) {
+        Schema::create('chant', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->char('title', 50)->nullable(false);
             $table->text('body');

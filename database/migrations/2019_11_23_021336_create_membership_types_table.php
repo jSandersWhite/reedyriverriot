@@ -13,7 +13,7 @@ class CreateMembershipTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('membership_types', function (Blueprint $table) {
+        Schema::create('membership_type', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->char('name', 50)->nullable(false);
             $table->text('description');

@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('home/index');
 })->name('home');
+
+Route::get('/privacy', function() {
+    return view('static/privacy');
+})->name('privacy');
+
+Route::get('/terms', function() {
+    return view('static/terms');
+})->name('terms');
+
+Route::get('/about', 'AboutController')->name('about');

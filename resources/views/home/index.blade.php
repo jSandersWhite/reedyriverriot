@@ -2,6 +2,10 @@
 
 @section('title', 'Reedy River Riot')
 
+@section('head_styles')
+    <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+@endsection
+
 @section('content')
 <div class="bg">
     <div class="container">
@@ -9,7 +13,7 @@
             <h1 class="display-1 text-uppercase landing-header font-weight-bold">Let's Riot</h1>
             
             <div class="py-5">
-                <a href="http://mp.gg/umubn" class="text-uppercase btn btn-green btn-lg">Join the Riot</a>
+                <a href="http://mp.gg/umubn" target="_blank" class="text-uppercase btn btn-green btn-lg">Join the Riot</a>
             </div>
         </div>
     </div>
@@ -27,5 +31,6 @@
             <img src="images/riot.png" class="landing-img">
         </div>
     </div>
+    <iframe class="home-video" src="https://www.youtube.com/embed/-0RT7qsuFPY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 @endsection
