@@ -43697,7 +43697,11 @@ ul.stepper li.completed a .label {
 }
 
 .header-img {
-  max-width: 100px;
+  max-width: 75px;
+}
+
+.navbar {
+  background-color: black;
 }
 
 .navbar {

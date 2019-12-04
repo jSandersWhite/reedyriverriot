@@ -1,7 +1,8 @@
 @import './app.scss';
 
-
-
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+}
 .bg {
     background-image: url('public/images/riot-bg.jpg');
     background-position: center;

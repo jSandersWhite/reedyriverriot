@@ -43697,11 +43697,11 @@ ul.stepper li.completed a .label {
 }
 
 .header-img {
-  max-width: 100px;
+  max-width: 75px;
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: black;
 }
 
 .mdb-color.lighten-5 {
@@ -63512,11 +63512,11 @@ ul.stepper li.completed a .label {
 }
 
 .header-img {
-  max-width: 100px;
+  max-width: 75px;
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: black;
 }
 
 main {
