@@ -11,6 +11,17 @@
                     Terms & Conditions
                 </a>
             </div>
+            <div class="mx-auto font-weight-bold text-uppercase text-white">
+                <span class="h5-responsive my-3"><i class="fas fa-camera"></i> Media Credits:</span>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="http://www.blakeschultz.org/photography-contact" class="text-white">Blake Schultz</a>
+                    </li>
+                    <li>
+                        <a href="https://www.jakeriggins.com/" class="text-white">Jake Riggins Productions</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="footer-copyright text-center py-3">
             &copy; {{ now()->year }} Reedy River Riot
