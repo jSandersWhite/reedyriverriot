@@ -1,4 +1,4 @@
-@import url(https://use.fontawesome.com/releases/v5.8.2/css/all.css);@charset "UTF-8";
+@charset "UTF-8";
 
 /*!
  * Material Design for Bootstrap 4
@@ -43696,6 +43696,14 @@ ul.stepper li.completed a .label {
           transform: rotate(180deg);
 }
 
+@font-face {
+  font-family: "DDayStencil";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/DDayStencil.ttf");
+  src: local("DDayStencil"), url("/fonts/DDayStencil.ttf") format("truetype");
+}
+
 .header-img {
   max-width: 75px;
 }
@@ -43724,5 +43732,9 @@ ul.stepper li.completed a .label {
 .home-video {
   width: 100%;
   height: 50vw;
+}
+
+.landing-header {
+  font-family: "DDayStencil", sans-serif;
 }
 

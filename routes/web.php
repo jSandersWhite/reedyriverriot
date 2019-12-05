@@ -24,3 +24,5 @@ Route::get('/terms', function() {
 })->name('terms');
 
 Route::get('/about', 'AboutController')->name('about');
+
+Route::get('/join', 'JoinController')->name('join');

@@ -1,5 +1,11 @@
 @import "./app.scss";
 
 main {
-    padding-top: 25vh;
+    padding-top: 20vh;
+}
+
+@include media-breakpoint-down(sm) {
+    main {
+        padding-top: 15vh;
+    }
 }

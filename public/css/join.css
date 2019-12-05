@@ -43712,3 +43712,17 @@ ul.stepper li.completed a .label {
   background-color: black;
 }
 
+main {
+  padding-top: 20vh;
+}
+
+@media (max-width: 767.98px) {
+  main {
+    padding-top: 15vh;
+  }
+}
+
+.membership-title {
+  font-family: "DDayStencil", sans-serif;
+}
+

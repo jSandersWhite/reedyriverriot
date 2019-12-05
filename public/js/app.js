@@ -40122,6 +40122,17 @@ __webpack_require__(/*! ../../node_modules/mdbootstrap/js/bootstrap.js */ "./nod
 
 /***/ }),
 
+/***/ "./resources/sass/join.scss":
+/*!**********************************!*\
+  !*** ./resources/sass/join.scss ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/static.scss":
 /*!************************************!*\
   !*** ./resources/sass/static.scss ***!
@@ -40134,9 +40145,9 @@ __webpack_require__(/*! ../../node_modules/mdbootstrap/js/bootstrap.js */ "./nod
 /***/ }),
 
 /***/ 0:
-/*!******************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/home.scss ./resources/sass/common.scss ./resources/sass/static.scss ./resources/sass/about.scss ***!
-  \******************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/home.scss ./resources/sass/common.scss ./resources/sass/static.scss ./resources/sass/about.scss ./resources/sass/join.scss ***!
+  \*********************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -40145,7 +40156,8 @@ __webpack_require__(/*! C:\xampp\htdocs\reedyriverriot\resources\sass\app.scss *
 __webpack_require__(/*! C:\xampp\htdocs\reedyriverriot\resources\sass\home.scss */"./resources/sass/home.scss");
 __webpack_require__(/*! C:\xampp\htdocs\reedyriverriot\resources\sass\common.scss */"./resources/sass/common.scss");
 __webpack_require__(/*! C:\xampp\htdocs\reedyriverriot\resources\sass\static.scss */"./resources/sass/static.scss");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\reedyriverriot\resources\sass\about.scss */"./resources/sass/about.scss");
+__webpack_require__(/*! C:\xampp\htdocs\reedyriverriot\resources\sass\about.scss */"./resources/sass/about.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\reedyriverriot\resources\sass\join.scss */"./resources/sass/join.scss");
 
 
 /***/ })
