@@ -27,12 +27,12 @@ class InsertMembershipTypes extends Migration
             ],
             [
                 'name' => 'Gold',
-                'description' => 'ncludes Bronze & Silver perks - Free parking in the Riot only lot on game day',
+                'description' => 'Includes Bronze & Silver perks - Free parking in the Riot only lot on game day',
                 'price' => 75.00
             ],
             [
                 'name' => 'Diamond',
-                'description' => 'ncludes Bronze, Silver, & Gold perks and an amazing exclusive perk (details coming soon)',
+                'description' => 'Includes Bronze, Silver, & Gold perks and an amazing exclusive perk (details coming soon)',
                 'price' => 100.00
             ],
             [

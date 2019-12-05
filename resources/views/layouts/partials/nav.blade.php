@@ -29,7 +29,7 @@
             </ul>
             <a href="{{ route('join') }}" class="text-uppercase btn btn-green black btn-sm">Join the Riot</a><br>
             <div class="d-flex justify-content-center-lg">
-                <a href="https://www.facebook.com/reedyriverriot" target="_blank"><i class="fa fa-facebook p-2"></i></a> 
+                <a href="https://www.facebook.com/reedyriverriot" target="_blank"><i class="fab fa-facebook p-2"></i></a> 
                 <a href="https://instagram.com/reedyriverriot" target="_blank"><i class="fab fa-instagram p-2"></i></a> 
                 <a href="https://www.twitter.com/GVLRiot" target="_blank"><i class="fab fa-twitter p-2"></i></a> 
             </div>
