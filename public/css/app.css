@@ -43712,3 +43712,7 @@ ul.stepper li.completed a .label {
   background-color: black;
 }
 
+.dday-header {
+  font-family: "DDayStencil", sans-serif;
+}
+

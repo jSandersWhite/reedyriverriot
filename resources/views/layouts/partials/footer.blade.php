@@ -15,10 +15,10 @@
                 <span class="h5-responsive my-3"><i class="fas fa-camera"></i> Media Credits:</span>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="http://www.blakeschultz.org/photography-contact" class="text-white">Blake Schultz</a>
+                        <a href="http://www.blakeschultz.org/photography-contact" target="_blank" class="text-white">Blake Schultz</a>
                     </li>
                     <li>
-                        <a href="https://www.jakeriggins.com/" class="text-white">Jake Riggins Productions</a>
+                        <a href="https://www.jakeriggins.com/" target="_blank" class="text-white">Jake Riggins Productions</a>
                     </li>
                 </ul>
             </div>

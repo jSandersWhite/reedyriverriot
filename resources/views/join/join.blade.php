@@ -26,7 +26,7 @@
                     <div class="card-body text-center">
                         <h3 class="card-title membership-title">{{ $type['name'] }}</h4>
                         <p class="card-text">{{ $type['description'] }}</p>
-                        <p>${{ $type['price'] }}</p>
+                        <p class="font-weight-bolder">${{ $type['price'] }}</p>
                     </div>
                 </div>
             @endforeach

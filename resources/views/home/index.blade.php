@@ -10,7 +10,7 @@
 <div class="bg">
     <div class="container">
         <div class="text-center text-white py-5">
-            <h1 class="display-1 text-uppercase landing-header">Let's Riot</h1>
+            <h1 class="display-1 text-uppercase dday-header">Let's Riot</h1>
             
             <div class="py-5">
                 <a href="{{ route('join') }}" class="text-uppercase btn btn-green btn-lg landing-head">Join the Riot</a>

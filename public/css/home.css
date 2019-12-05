@@ -43712,6 +43712,10 @@ ul.stepper li.completed a .label {
   background-color: black;
 }
 
+.dday-header {
+  font-family: "DDayStencil", sans-serif;
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -43732,9 +43736,5 @@ ul.stepper li.completed a .label {
 .home-video {
   width: 100%;
   height: 50vw;
-}
-
-.landing-header {
-  font-family: "DDayStencil", sans-serif;
 }
 
