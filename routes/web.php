@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,3 +28,7 @@ Route::get('/terms', function() {
 Route::get('/about', 'AboutController')->name('about');
 
 Route::get('/join', 'JoinController')->name('join');
+
+Route::get('/contact', 'ContactController@show')->name('contact');
+
+Route::post('/contact/newsletter-signup', 'ContactController@newsletterSignup');

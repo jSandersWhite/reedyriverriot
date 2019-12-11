@@ -5,8 +5,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>@yield('title')</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUIyJ" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('head_styles')

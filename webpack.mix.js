@@ -18,4 +18,5 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/static.scss', 'public/css')
     .sass('resources/sass/about.scss', 'public/css')
     .sass('resources/sass/join.scss', 'public/css')
+    .sass('resources/sass/contact.scss', 'public/css')
     .copyDirectory('resources/font/d-day-stencil/DDayStencil.ttf', 'public/fonts');;
