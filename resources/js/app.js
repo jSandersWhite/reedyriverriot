@@ -1,3 +1,2 @@
-
-require('../../node_modules/mdbootstrap/js/jquery.js')
-require('../../node_modules/mdbootstrap/js/bootstrap.js');
+import bsCustomFileInput from '../../node_modules/mdbootstrap/js/modules/forms-free.min.js'; 
+global.bsCustomFileInput = bsCustomFileInput;

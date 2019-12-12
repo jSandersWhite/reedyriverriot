@@ -26,7 +26,7 @@ class NewsletterSignup extends FormRequest
         return [
             'first_name' => 'required|max:50',
             'last_name' => 'required|max:50',
-            'email' => 'required|email|max:100'
+            'email' => 'required|email|max:100|unique:newsletter_user,email'
         ];
     }
 

@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\NewsletterUser;
 use App\Http\Requests\NewsletterSignup;
 use App\Http\Requests\SubmitContact;
+use Illuminate\Support\Facades\Validator;
 
 class ContactController extends Controller
 {
@@ -25,7 +26,13 @@ class ContactController extends Controller
      */
     public function newsletterSignup(NewsletterSignup $request)
     {
-        if ($request->validated()) {
+        $validator = Validator::make($request->all());
+        if ($validator->fails()) { 
+            return [
+                'success' => 0,
+                'errors' => $validator->errors()
+            ];
+        } else {
             $model = NewsletterUser::create([
                 'first_name' => $request->first_name,
                 'last_name' => $request->last_name,
@@ -33,11 +40,12 @@ class ContactController extends Controller
             ]);
 
             if ($model->save()) {
-                $request->session()->flash('status', 'Thanks! Your information was submitted successfully.');
-            }
-        }
+                $request->session()->flash('success', 'Thanks! Your information was submitted successfully.');
+                return null;
+            } 
+        }    
 
-        $request->session()->flash('status', 'Error');
+        
     }
 
     /**
@@ -45,6 +53,7 @@ class ContactController extends Controller
      */
     public function submitContact(SubmitContact $request)
     {
+        $validator = Validator::make($request->all());
         if ($request->validated()) {
             $model = ContactForm::create([
                 'first_name' => $request->first_name,
@@ -58,7 +67,13 @@ class ContactController extends Controller
                 $request->session()->flash('status', 
                     'Thanks! Your message sent successfully. We\'ll reach out as soon as possible!'
                 );
+                return null;
             }
         }
+
+        return [
+            'success' => 0,
+            'errors' => $validator->errors()
+        ];
     }
 }

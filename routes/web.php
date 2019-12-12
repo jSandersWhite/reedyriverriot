@@ -32,3 +32,5 @@ Route::get('/join', 'JoinController')->name('join');
 Route::get('/contact', 'ContactController@show')->name('contact');
 
 Route::post('/contact/newsletter-signup', 'ContactController@newsletterSignup');
+
+Route::post('/contact/submit-contact', 'ContactController@submitContact');
