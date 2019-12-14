@@ -2,6 +2,11 @@
     <div class="container text-center text-md-left">
         <div class="d-flex justify-content-around">
             <div class="mx-auto">
+                <a href="https://www.paypal.me/reedyriverriot" class="h5-responsive font-weight-bold text-uppercase text-white my-3" target="_blank">
+                    Donate
+                </a>
+            </div>
+            <div class="mx-auto">
                 <a href="{{ route('privacy') }}" class="h5-responsive font-weight-bold text-uppercase text-white my-3">
                     Privacy Policy
                 </a>

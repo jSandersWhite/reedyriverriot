@@ -11,7 +11,7 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js').extract(['mdbootstrap'])
+mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .sass('resources/sass/home.scss', 'public/css')
     .sass('resources/sass/common.scss', 'public/css')
@@ -19,4 +19,4 @@ mix.js('resources/js/app.js', 'public/js').extract(['mdbootstrap'])
     .sass('resources/sass/about.scss', 'public/css')
     .sass('resources/sass/join.scss', 'public/css')
     .sass('resources/sass/contact.scss', 'public/css')
-    .copyDirectory('resources/font/d-day-stencil/DDayStencil.ttf', 'public/fonts');;
+    .copyDirectory('resources/font/d-day-stencil/DDayStencil.ttf', 'public/fonts');

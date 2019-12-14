@@ -23,8 +23,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('contact') }}">Contact</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Shop</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Store</a>
+                        <a class="dropdown-item" href="https://www.paypal.me/reedyriverriot" target="_blank">Donate</a>
+                    </div>
                 </li>
             </ul>
             <a href="{{ route('join') }}" class="text-uppercase btn btn-green black btn-sm">Join the Riot</a><br>

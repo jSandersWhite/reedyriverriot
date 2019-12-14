@@ -26,12 +26,9 @@ class ContactController extends Controller
      */
     public function newsletterSignup(NewsletterSignup $request)
     {
-        $validator = Validator::make($request->all());
+        $validator = Validator::make($request->all(), $request->rules());
         if ($validator->fails()) { 
-            return [
-                'success' => 0,
-                'errors' => $validator->errors()
-            ];
+            return response()->json(['errors' => $validator->errors()]);
         } else {
             $model = NewsletterUser::create([
                 'first_name' => $request->first_name,
@@ -41,7 +38,7 @@ class ContactController extends Controller
 
             if ($model->save()) {
                 $request->session()->flash('success', 'Thanks! Your information was submitted successfully.');
-                return null;
+                return response()->redirectTo(route('contact'));
             } 
         }    
 
@@ -67,13 +64,10 @@ class ContactController extends Controller
                 $request->session()->flash('status', 
                     'Thanks! Your message sent successfully. We\'ll reach out as soon as possible!'
                 );
-                return null;
+                return response()->redirectTo(route('contact'));
             }
         }
 
-        return [
-            'success' => 0,
-            'errors' => $validator->errors()
-        ];
+        return response()->json(['errors' => $validator->errors()->all()]);
     }
 }

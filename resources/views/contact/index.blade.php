@@ -6,6 +6,10 @@
     <link href="{{ asset('css/contact.css') }}" rel="stylesheet">
 @endsection
 
+@section('bottom-scripts')
+    <script src="{{ asset('js/contact.js') }}"></script>
+@endsection
+
 @section('content')
 <div class="container">
     @if(Session::has('success'))
@@ -27,7 +31,7 @@
             <h5 class="card-text">Do you have ideas? Questions? Concerns? We would love to hear from you!</h5>
         </div>
         <div class="card-body">        
-        {{ Form::open(array('action' => 'ContactController@submitContact')) }}
+        {{ Form::open(array('action' => 'ContactController@submitContact', 'id' => 'contactForm')) }}
         <div class="row mx-3">
             <div class="col px-0">
                 {{ Form::label('first_name') }} *
@@ -51,7 +55,7 @@
             {{ Form::textArea('message', null, ['class' => 'form-control validate']) }}
         </div>
         <div class="d-flex justify-content-center">
-            {{ Form::submit('Submit', ['class' => 'btn btn-green']) }}
+            {{ Form::submit('Submit', ['class' => 'btn btn-green', 'id' => 'contactBtn']) }}
         </div>
         {{ Form::close() }}
     </div>
@@ -68,7 +72,10 @@
             </div>
 
             <div class="modal-body mx-3">
-                {{ Form::open(array('action' => 'ContactController@newsletterSignup')) }}
+                    <div class="alert alert-danger print-error-msg" style="display:none">
+                            <ul></ul>
+                        </div>
+                {{ Form::open(array('action' => 'ContactController@newsletterSignup', 'id' => 'newsletterForm')) }}
                 <div class="row">
                     <div class="col">
                         {{ Form::label('first_name') }} *
@@ -85,7 +92,7 @@
                 </div>
 
                 <div class="modal-footer d-flex justify-content-center">
-                    {{ Form::submit('Submit', ['class' => 'btn btn-green']) }}
+                    {{ Form::submit('Submit', ['class' => 'btn btn-green', 'id' => 'newsletterBtn']) }}
                 </div>
                 
                 {{ Form::close() }}
